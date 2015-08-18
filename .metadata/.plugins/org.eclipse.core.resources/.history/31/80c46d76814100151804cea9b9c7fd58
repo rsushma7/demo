@@ -1,0 +1,8 @@
+package verizonspringmvc;
+
+public class HelloController {
+public String sendMessage()
+{
+	return "susccess";
+}
+}

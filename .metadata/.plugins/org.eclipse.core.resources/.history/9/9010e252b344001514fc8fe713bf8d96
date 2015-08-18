@@ -1,0 +1,44 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+     <%@page import="java.sql.*" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script>
+function checkEno(eno)
+{
+ <%
+	String s=eno;
+int no=Integer.parseInt(eno);
+Class.forName("oracle.jdbc.OracleDriver");
+String url="jdbc:oracle:thin:@localhost:1521:orcl";
+Connection con=DriverManager.getConnection(url,"scott","tiger");
+Statement st=con.createStatement("select empno from employee");
+ResultSet rs=st.executeQuery();
+while(rs.next())
+{
+if(rs.getInt(1)==no)
+{
+ %>
+ <h1>Already present</h1>
+ <%}else{
+	%>
+	<h1>Insert</h1>
+	<%} }%>
+
+
+
+}
+</script>
+</head>
+<body>
+<form name=form1 >
+Enter the employee number:<input type="text" name="empno">
+Enter the employee name:<input type="text" name="empname">
+Enter the salary:<input type="text" name="salary">
+<input type ="submit" onClick="checkEno(empno)">
+</form>
+</body>
+</html>

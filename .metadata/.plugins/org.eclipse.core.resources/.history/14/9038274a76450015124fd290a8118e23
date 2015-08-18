@@ -1,0 +1,11 @@
+package Day;
+
+public class HelloWorldImpl implements HelloWorld{
+
+	@Override
+	public String greetings(String name) {
+		// TODO Auto-generated method stub
+		return "Hello "+name;
+	}
+
+}

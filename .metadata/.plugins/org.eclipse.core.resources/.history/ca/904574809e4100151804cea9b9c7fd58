@@ -1,0 +1,12 @@
+package controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/emplform.htm")
+public class EmployeeController {
+
+	@RequestMapping(method=RequestMethod.GET)
+	public
+}

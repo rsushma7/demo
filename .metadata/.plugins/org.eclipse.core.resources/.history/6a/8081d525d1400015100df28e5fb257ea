@@ -1,0 +1,13 @@
+package beans;
+
+import org.springframework.beans.factory.BeanFactory;
+
+public class ClientAppln {
+
+	public static void main(String[] args) {
+		BeanFactory factory=new XmlBeanFactory(new ClassPathResource("Spring.xml"));
+		
+
+	}
+
+}

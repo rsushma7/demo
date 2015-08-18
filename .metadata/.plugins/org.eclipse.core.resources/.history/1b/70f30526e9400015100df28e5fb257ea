@@ -1,0 +1,5 @@
+package di;
+
+public interface MessageService {
+	public sendMessage( String receiverName, String msg)
+}

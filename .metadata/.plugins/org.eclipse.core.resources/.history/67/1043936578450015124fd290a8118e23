@@ -1,0 +1,15 @@
+package Day;
+
+import javax.jws.WebService;
+
+@WebService(endpointInterface="Day.HelloWorld")
+//Service Implementaion Class
+public class HelloWorldImpl implements HelloWorld{
+
+	@Override
+	public String greetings(String name) {
+		// TODO Auto-generated method stub
+		return "Hello "+name;
+	}
+
+}

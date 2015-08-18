@@ -1,0 +1,18 @@
+package di;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.ClassPathResource;
+
+public class MyMessageSender {
+	MessageService ms;
+
+	public MessageService getMs() {
+		return ms;
+	}
+
+	public void setMs(MessageService ms) {
+		this.ms = ms;
+	}
+	
+}

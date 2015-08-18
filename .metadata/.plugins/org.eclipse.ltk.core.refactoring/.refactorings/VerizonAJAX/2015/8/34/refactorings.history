@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Data.json&apos; to &apos;WebContent&apos;&#x0D;&#x0A;- Original project: &apos;VerizonAJAX&apos;&#x0D;&#x0A;- Destination element: &apos;WebContent&apos;&#x0D;&#x0A;- Original element: &apos;Data.json&apos;" description="Copy file" element1="Data.json" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1439804768041" target="/VerizonAJAX/WebContent" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,12 @@
+package verizonspringmvc;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class HelloController {
+	@RequestMapping("hello.htm")
+	public String sendMessage()
+	{
+	return "Success";
+	}
+}
